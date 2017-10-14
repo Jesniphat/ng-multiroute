@@ -7,7 +7,7 @@ import { SubadminComponent } from './subadmin/subadmin.component';
 
 const routes: Routes = [
     { path: 'admin', component: AdminComponent, children: [
-      {path: 'subadmin', component: SubadminComponent, outlet:'admin'},
+      {path: 'subadmin/:id', component: SubadminComponent, outlet:'admin'},
       {path: '', component: SubadminComponent, outlet:'admin'}
   ]}
 ];
