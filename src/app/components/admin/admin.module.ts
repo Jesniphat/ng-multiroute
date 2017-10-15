@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { AdminComponent } from './admin.component';
 import { SubadminComponent } from './subadmin/subadmin.component';
+import { SecondadminComponent } from './secondadmin/secondadmin.component'
 import { routing } from "./admin.routing";
 
 @NgModule({
@@ -11,7 +12,7 @@ import { routing } from "./admin.routing";
     CommonModule,
     routing
   ],
-  declarations: [AdminComponent, SubadminComponent],
+  declarations: [AdminComponent, SubadminComponent, SecondadminComponent],
   bootstrap: [AdminComponent]
 })
 export class AdminModule { }
