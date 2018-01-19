@@ -1,6 +1,15 @@
 <p>
   admin works!
 </p>
-<button (click)="gonext('1')">Next</button>
-<a [routerLink]="['/admin', { outlets: { admin: 'second/2' } }]">Contact</a>
-<router-outlet name="admin"></router-outlet>
+
+<button (click)="gonext('2')">Next</button>
+<a [routerLink]="[{ outlets: { admin: 'second/2' } }]">Contact</a>
+
+<a [routerLink]="admin/subadmin/2">sub</a>
+
+<router-outlet name="admin"></router-outlet>\\
+
+
+
+<!-- <button (click)="gonext('1')">Next</button>
+<a [routerLink]="[{ outlets: { admin: 'second/2' } }]">Contact</a> -->

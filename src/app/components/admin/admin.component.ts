@@ -14,7 +14,12 @@ export class AdminComponent implements OnInit {
 
   }
 
-  gonext(id){
+  // gonext(id){
+  //   console.log(id);
+  //   this.router.navigate(['admin', {outlets: {'admin': ['subadmin', id]}}]);
+  // }
+
+  gonext(id) {
     console.log(id);
     this.router.navigate(['/admin', {outlets: {'admin': ['subadmin', id]}}]);
   }
