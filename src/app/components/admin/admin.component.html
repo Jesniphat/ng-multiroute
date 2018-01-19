@@ -5,7 +5,7 @@
 <button (click)="gonext('2')">Next</button>
 <a [routerLink]="[{ outlets: { admin: 'second/2' } }]">Contact</a>
 
-<a [routerLink]="admin/subadmin/2">sub</a>
+<a [routerLink]="[{ outlets: { admin: 'subadmin/9' } }]">sub</a>
 
 <router-outlet name="admin"></router-outlet>\\
 

@@ -21,7 +21,7 @@ export class AdminComponent implements OnInit {
 
   gonext(id) {
     console.log(id);
-    this.router.navigate(['/admin', {outlets: {'admin': ['subadmin', id]}}]);
+    this.router.navigate(['admin/post', {outlets: {'admin': ['subadmin', id]}}]);
   }
 
 }
